@@ -85,7 +85,7 @@ const MODES = [
 ];
 
 const STEPS = [
-  { n:'01', title:'Install globally', desc:'One command, works in any git project.', code:'npm install -g phantomit' },
+  { n:'01', title:'Install globally', desc:'One command, works in any git project.', code:'npm install -g phantomit-cli' },
   { n:'02', title:'Init & add key', desc:'Creates config, then add your free Groq key.', code:'phantomit init' },
   { n:'03', title:'Start watching', desc:'Runs silently in the background while you code.', code:'phantomit watch --on-save --daemon' },
   { n:'04', title:'Approve & push', desc:'Y to push, E to edit, N to skip. Or daemon does it automatically.', code:'→ y  ✔ pushed to origin/main' },
@@ -94,7 +94,7 @@ const STEPS = [
 export default function Landing() {
   const [copied, setCopied] = useState(false);
   const copy = () => {
-    navigator.clipboard.writeText('npm install -g phantomit');
+    navigator.clipboard.writeText('npm install -g phantomit-cli');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -130,7 +130,7 @@ export default function Landing() {
             Phantomit watches your code, diffs your changes, and generates professional commit messages via Groq AI. Your GitHub graph stays green while you stay in flow.
           </p>
           <div className="flex items-center bg-zinc-900 border border-white/12 rounded-xl overflow-hidden max-w-xs mb-6">
-            <span className="font-mono text-[13px] text-emerald-400 px-4 py-3 flex-1">npm install -g phantomit</span>
+            <span className="font-mono text-[13px] text-emerald-400 px-4 py-3 flex-1">npm install -g phantomit-cli</span>
             <button onClick={copy} className="bg-fuchsia-500/10 border-l border-white/10 text-white/40 hover:text-fuchsia-400 hover:bg-fuchsia-500/20 px-4 py-3 font-mono text-[11px] transition-all">
               {copied ? 'copied!' : 'copy'}
             </button>

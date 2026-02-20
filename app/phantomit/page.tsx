@@ -161,8 +161,8 @@ export default function DocsPage() {
           <section id="installation" className="mb-20 scroll-mt-8">
             <h2 className="text-2xl font-bold text-white tracking-tight pb-4 mb-5 border-b border-white/[0.07]" style={{ fontFamily: "'Syne', sans-serif" }}>Installation</h2>
             <p className="text-[14px] font-light text-white/50 leading-relaxed mb-4">Phantomit is a global CLI tool. Install it once and use it in any git project on your machine.</p>
-            <CodeBlock copyText="npm install -g phantomit">
-              <div><span className="text-white/30">$</span> <span className="text-slate-200">npm install -g phantomit</span></div>
+            <CodeBlock copyText="npm install -g phantomit-cli">
+              <div><span className="text-white/30">$</span> <span className="text-slate-200">npm install -g phantomit-cli</span></div>
             </CodeBlock>
             <p className="text-[14px] font-light text-white/50 leading-relaxed">
               Requires Node.js 18+. You'll also need a free Groq API key from{' '}
