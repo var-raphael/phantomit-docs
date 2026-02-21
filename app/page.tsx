@@ -241,7 +241,7 @@ export default function Landing() {
 
       {/* Footer */}
       <footer className="border-t border-white/[0.06] px-6 md:px-12 py-7 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="font-mono text-[11px] text-white/20 tracking-wide">© 2026 phantomit — built by <a href="https://github.com/var-raphael" className="text-fuchsia-400">var-raphael</a></p>
+        <p className="font-mono text-[11px] text-white/20 tracking-wide">© 2026 phantomit — built by <a href="https://github.com/var-raphael" className="text-fuchsia-400">Raphael</a></p>
         <div className="flex gap-6">
           <Link href="/phantomit" className="font-mono text-[11px] text-white/20 hover:text-white/50 transition-colors">Docs</Link>
           <a href="https://github.com/var-raphael/phantomit" target="_blank" rel="noreferrer" className="font-mono text-[11px] text-white/20 hover:text-white/50 transition-colors">GitHub</a>

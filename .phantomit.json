@@ -1,0 +1,23 @@
+{
+  "mode": "interval",
+  "interval": 30,
+  "lines": 20,
+  "debounce": 8,
+  "autoPush": true,
+  "watch": [
+    "src",
+    "app",
+    "lib",
+    "components",
+    "pages"
+  ],
+  "ignore": [
+    "node_modules",
+    ".next",
+    "dist",
+    ".git",
+    "*.log",
+    ".env*"
+  ],
+  "branch": "main"
+}
