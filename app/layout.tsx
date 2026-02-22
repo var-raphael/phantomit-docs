@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const dmMono = DM_Mono({
   variable: "--font-dm-mono",
@@ -35,6 +36,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dmMono.variable} antialiased bg-[#0a0a0a]`}>
         {children}
+        <Script
+          src="https://phantomtrack-cdn.vercel.app/phantom.v1.0.0.js?trackid=track_x3catnj53ilwq8d87fda6q"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
